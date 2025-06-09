@@ -61,3 +61,21 @@ const result = texto === textoInvertido
 // Exibe o resultado no console
 console.log(result);
 
+
+//Neste exercício, utilizamos o laço for para percorrer 
+// uma sequência de números até um valor específico.
+//temos um valor final definido. Essa é justamente uma das principais situações em que o for é ideal.
+
+const numeroFinal = 5;
+
+for (i = 1; i <= numeroFinal; i++) {
+    console.log(i)
+}
+
+const numeroRegre = 10;
+
+for (let i = 10; i >= 0; i--) {
+    console.log(i)
+}
+
+console.log("Lançar!")
