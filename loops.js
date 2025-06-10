@@ -66,11 +66,12 @@ console.log(result);
 // uma sequência de números até um valor específico.
 //temos um valor final definido. Essa é justamente uma das principais situações em que o for é ideal.
 
-const numeroFinal = 5;
+/* const numeroFinal = 5;
 
 for (i = 1; i <= numeroFinal; i++) {
     console.log(i)
 }
+
 
 const numeroRegre = 10;
 
@@ -79,3 +80,46 @@ for (let i = 10; i >= 0; i--) {
 }
 
 console.log("Lançar!")
+ */
+
+/* Aqui, começamos o for com a variável i = 1 e seguimos até i <= numeroFinal. A cada passo, 
+usamos i++ para incrementar. Dentro do laço, aplicamos a condição i % 2 === 0 para verificar se o número é par.
+O operador % (módulo) retorna o resto da divisão de i por 2. Se esse resto for zero,
+então i é múltiplo de 2 — ou seja, par — e o número é exibido com console.log(i).
+Essa lógica funciona bem para qualquer intervalo definido. */
+
+//usando o for
+const numeroMaximo = 10;
+
+/* for (let i = 0; i <= numeroMaximo; i++) {
+     if (i % 2 === 0)
+        console.log(i)
+}
+
+const numeroFinal = 10;
+let i = 1;
+
+//usando o while
+while (i <= numeroFinal) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+  i++;
+}
+ */
+
+/* Para resolver essa atividade, utilizamos um laço for para percorrer cada caractere da string senha. 
+A propriedade .length nos informa quantos caracteres a string possui, e usamos isso como limite da repetição.
+
+O laço começa do índice 0 e vai até senha.length - 1, porque os índices em JavaScript são baseados em zero —
+ ou seja, se a string tem 14 caracteres, o último índice será 13.
+
+Dentro do for, acessamos cada caractere usando senha[i], e exibimos essa informação no console junto com a posição correspondente. 
+Para isso, usamos uma template literal — uma forma moderna e mais legível de montar strings em JavaScript. Em vez de concatenar com +, 
+usamos crase (`) e ${...} para interpolar valores dentro da string. */
+
+const senha = "segurança@2025";
+
+for (let i = 0; i < senha.length; i++) {
+    console.log(`Caractere ${i + 1}: ${senha[i]}`)
+}
