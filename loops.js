@@ -123,3 +123,22 @@ const senha = "segurança@2025";
 for (let i = 0; i < senha.length; i++) {
     console.log(`Caractere ${i + 1}: ${senha[i]}`)
 }
+
+
+ /*  Nesta atividade, usamos o laço while porque não sabemos previamente quantos nomes serão processados
+   — o programa precisa continuar até que a palavra "fim" seja encontrada. A cada iteração, 
+  verificamos se o nome atual é diferente de "fim" através do operador !==. Enquanto essa condição for verdadeira,
+  o laço continua rodando.
+
+ Criamos uma variável i para controlar o índice atual. A cada volta do laço,
+ exibimos o nome com console.log("Nome:", entradas[i]) e em seguida incrementamos i.
+ Assim, o programa avança elemento por elemento, até que encontre "fim" — e então para. */
+
+const entradas = ["Ana", "Bruno", "Carla", "fim", "Daniel" ];
+let i = 0;
+
+while (entradas[i] !== "fim") {
+    console.log("Nome:", entradas[i])
+    i++;
+}
+
